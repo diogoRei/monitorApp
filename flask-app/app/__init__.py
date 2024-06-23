@@ -1,14 +1,10 @@
 from flask import Flask
-
-from flask_sqlalchemy import SQLAlchemy
-
 import sqlite3
-
-from app.models.banco import tabeladados
 
 DATABASE = './storage.db'
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '168428DIOGOREIS'
 
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)

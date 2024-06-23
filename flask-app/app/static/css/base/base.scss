@@ -1,0 +1,53 @@
+html{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh; 
+
+
+    /* Grid */
+    #main {
+        display: grid;
+        grid-template:
+        "logo nav nav" 2fr
+        "sidenav content advert" 16fr
+        "sidenav footer footer" 2fr;
+        
+        width: 100vw;
+        height: 100vh; 
+        	
+        border: 1px solid #ccc;
+    
+    
+        .logo {
+            grid-area: logo;
+        }
+        
+        .nav {
+            grid-area: nav;
+        }
+        
+        .content {
+            grid-area: content;
+        }
+        
+        .sidenav {
+            grid-area: sidenav;
+        }
+        
+        .advert {
+            grid-area: advert;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        
+        /* Grid Item */
+        .item {
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+}
