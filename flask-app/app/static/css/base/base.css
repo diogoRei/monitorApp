@@ -7,8 +7,8 @@ html {
 html #main {
   display: grid;
   grid-template: "logo nav nav" 2fr "sidenav content advert" 16fr "sidenav footer footer" 2fr;
-  min-width: 100rem;
-  min-height: 100rem;
+  min-width: 100dvw;
+  min-height: 100dvh;
   border: 1px solid #ccc;
   /* Grid Item */
 }
