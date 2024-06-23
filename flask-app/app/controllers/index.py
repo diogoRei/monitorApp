@@ -10,18 +10,18 @@ from wtforms.validators import DataRequired
 #RECAPTCHA_DATA_ATTRS = {'theme': 'dark'}
 
 class MyForm(FlaskForm):
-    nome = StringField('Usuario', validators=[DataRequired()],id='iptnome')
-    senha = PasswordField('Senha', validators=[DataRequired()],id='iptnome')    
-    remember = BooleanField('Remember')
+    email = StringField('Email:', validators=[DataRequired()])
+    senha = PasswordField('Senha:', validators=[DataRequired()])    
+    remember = BooleanField('Remember:')
     #protocol = SelectField(choices=[('usu', 'Usuario'), ('for', 'Fornecerdor'), ('cli', 'Cliente')])
     recaptcha = RecaptchaField()
 
-@app.route('/<user>', methods=['GET', 'POST'])
+
 @app.route('/', defaults={'user':None}, methods=['GET', 'POST'])
 def index(user):
     form = MyForm()    
     if form.validate_on_submit():
-        user = form.nome
+        user = form.email
         #print(f'nome::  {user.data}')
         #return redirect(f'/{user.data}')
     return render_template('/html/index.html', user=user,form=form)

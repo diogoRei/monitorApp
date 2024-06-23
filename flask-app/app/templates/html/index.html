@@ -2,12 +2,12 @@
 {% block index %}
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index/index.css')}}">
 
-
-<form method="POST" action="/">
+<h1>Login</h1>
+<form id="form" method="POST" action="/">
   
   <div class='itens_form'>
-    {{ form.nome.label(id='lb_nome') }} 
-    {{ form.nome(size=10,placeholder='Nome',id='ipt_nome')}}
+    {{ form.email.label(id='lb_email') }} 
+    {{ form.email(size=10,placeholder='Seu_Email@gmail.com',id='ipt_email')}}
   </div>   
   <div class='itens_form'>
     {{ form.senha.label(id='lb_senha') }} 
@@ -15,7 +15,7 @@
   </div>
   <div class='itens_form'>
     <div>
-        {{form.recaptcha()}}
+        {{form.recaptcha(id='ipt_recaptcha')}}
     </div>
     <div>
       {{form.remember.label(id='lb_remember')}}
