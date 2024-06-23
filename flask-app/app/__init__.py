@@ -2,9 +2,11 @@ from flask import Flask
 import sqlite3
 
 DATABASE = './storage.db'
+WTF_CSRF_SECRET_KEY = '168428DIOGOREIS'
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '168428DIOGOREIS'
+app.config['SECRET_KEY'] = WTF_CSRF_SECRET_KEY
+
 
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)

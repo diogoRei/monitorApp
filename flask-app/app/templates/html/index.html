@@ -1,17 +1,19 @@
 {% extends "html/base.html" %}
 {% block index %}
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index/index.css')}}">
-  
-{% if user %}
-  <h1>bem vindo , {{user}}</h1>
-{% else %}
-  <h1>Bem vindo Anonimo!!!<h1>
-{% endif %}
+
 
 <form method="POST" action="/">  
   {{ form.csrf_token }}
-  {{ form.name.label }} {{ form.name(size=20) }}
-  <input type="submit" value="Go">
+  {{ form.nome.label }} 
+  {{ form.nome(size=10,placeholder='Nome')}}
+  {{ form.senha.label }} 
+  {{ form.senha(size=10,placeholder='Senha')}}
+  {{form.protocol.label}}
+  {{form.protocol()}}
+  {{form.remember.label}}
+  {{form.remember()}}
+  <input id='btn_submit' type="submit" value="Login">
 </form>
 
 
