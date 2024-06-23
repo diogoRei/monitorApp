@@ -7,8 +7,8 @@ html {
 html #main {
   display: grid;
   grid-template: "logo nav nav" 2fr "sidenav content advert" 16fr "sidenav footer footer" 2fr;
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100rem;
+  min-height: 100rem;
   border: 1px solid #ccc;
   /* Grid Item */
 }
@@ -35,4 +35,10 @@ html #main .item {
   background: tomato;
   text-align: center;
   font-size: 1.5em;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=base.css.map */
