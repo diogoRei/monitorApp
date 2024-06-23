@@ -1,16 +1,23 @@
 html {
-  background-color: aquamarine;
+  background-color: white;
   min-width: 100vw;
   min-height: 100vh;
   /* Grid */
 }
 html #main {
+  background-color: white;
   display: grid;
   grid-template: "logo nav nav" 2fr "sidenav content advert" 16fr "sidenav footer footer" 2fr;
-  min-width: 100dvw;
-  min-height: 100dvh;
+  min-width: 100vw;
+  min-height: 100vh;
   border: 1px solid #ccc;
   /* Grid Item */
+}
+html #main .item {
+  margin: 5px;
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
 }
 html #main .logo {
   grid-area: logo;
@@ -23,22 +30,13 @@ html #main .content {
 }
 html #main .sidenav {
   grid-area: sidenav;
+  background-color: white;
 }
 html #main .advert {
   grid-area: advert;
+  background-color: white;
 }
 html #main .footer {
   grid-area: footer;
-}
-html #main .item {
-  margin: 5px;
-  background: tomato;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 4rem;
-  }
+  background-color: white;
 }/*# sourceMappingURL=base.css.map */
