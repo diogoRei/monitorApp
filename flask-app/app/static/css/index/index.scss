@@ -1,0 +1,28 @@
+form{
+    display: block;
+    width: 100%;
+    border-radius: 10%;    
+    font-size: small;
+    .itens_form{
+        margin-top: 3%;
+        
+        border-radius: 10%;
+         #lb_nome,#lb_senha{
+            width: 90%;
+            margin: 5px 5px 5px 5px;
+             
+        }
+        #ipt_nome,#ipt_senha{
+            min-width: 90%;
+            margin: 5px 5px 5px 5px; 
+            
+        }
+        #lb_remember{
+            margin: 5px 5px 5px 5px; 
+        }
+        #btn_submit{
+            width: 100%;
+            background-color: rgb(75, 201, 70);
+        }
+    }
+}

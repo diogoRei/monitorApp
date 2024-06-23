@@ -10,11 +10,13 @@ body #main, html #main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e26767;
+  background-color: #e4dddd;
   height: 100vh;
 }
 body #main #home, html #main #home {
-  background-color: blue;
-  min-width: 200px;
-  min-height: 200px;
+  background-color: rgb(247, 247, 250);
+  min-width: 220px;
+  min-height: 220px;
+  align-items: center;
+  border-radius: 10%;
 }/*# sourceMappingURL=base.css.map */

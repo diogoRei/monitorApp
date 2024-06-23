@@ -3,25 +3,25 @@
 <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index/index.css')}}">
 
 
-<form method="POST" action="/">  
-  {{ form.csrf_token }}
-  <div>
-    {{ form.nome.label }} 
-    {{ form.nome(size=10,placeholder='Nome')}}
+<form method="POST" action="/">
+  
+  <div class='itens_form'>
+    {{ form.nome.label(id='lb_nome') }} 
+    {{ form.nome(size=10,placeholder='Nome',id='ipt_nome')}}
   </div>   
-  <div>
-    {{ form.senha.label }} 
-    {{ form.senha(size=10,placeholder='Senha')}}
+  <div class='itens_form'>
+    {{ form.senha.label(id='lb_senha') }} 
+    {{ form.senha(size=10,placeholder='Senha',id='ipt_senha')}}
+  </div>
+  <div class='itens_form'>
+    <div>
+      {{form.remember.label(id='lb_remember')}}
+      {{form.remember(id='ipt_remember')}}
+    </div>
+    <input id='btn_submit' type="submit" value="Login">
+    {{ form.csrf_token(id='csrf_token') }}
   </div>   
-  <div>
-    {{form.protocol.label}}
-    {{form.protocol()}}
-  </div>   
-  <div>
-    {{form.remember.label}}
-    {{form.remember()}}
-  </div>   
-  <input id='btn_submit' type="submit" value="Login">
+  
 </form>           
 {% endblock %}
 
