@@ -5,18 +5,23 @@
 
 <form method="POST" action="/">  
   {{ form.csrf_token }}
-  {{ form.nome.label }} 
-  {{ form.nome(size=10,placeholder='Nome')}}
-  {{ form.senha.label }} 
-  {{ form.senha(size=10,placeholder='Senha')}}
-  {{form.protocol.label}}
-  {{form.protocol()}}
-  {{form.remember.label}}
-  {{form.remember()}}
+  <div>
+    {{ form.nome.label }} 
+    {{ form.nome(size=10,placeholder='Nome')}}
+  </div>   
+  <div>
+    {{ form.senha.label }} 
+    {{ form.senha(size=10,placeholder='Senha')}}
+  </div>   
+  <div>
+    {{form.protocol.label}}
+    {{form.protocol()}}
+  </div>   
+  <div>
+    {{form.remember.label}}
+    {{form.remember()}}
+  </div>   
   <input id='btn_submit' type="submit" value="Login">
-</form>
-
-
-           
+</form>           
 {% endblock %}
 
