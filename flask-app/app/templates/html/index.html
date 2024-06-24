@@ -15,7 +15,7 @@
   </div>
   <div class='itens_form'>
     <div>
-        {{form.recaptcha(id='ipt_recaptcha')}}
+        {{form.recaptcha(id='ipt_recaptcha')}} 
     </div>
     <div>
       {{form.remember.label(id='lb_remember')}}
@@ -23,6 +23,7 @@
     </div>
     <input id='btn_submit' type="submit" value="Login">
     {{ form.csrf_token(id='csrf_token') }}
+  
   </div>   
   
 </form>           

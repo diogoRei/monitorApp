@@ -17,3 +17,15 @@ window.addEventListener('load', adjustViewport);
 
 // Chamar a função quando a janela é redimensionada
 window.addEventListener('resize', adjustViewport);
+
+
+window.addEventListener('load',_=>{
+    const sub2 = document.getElementById('ipt_email');
+    sub2.value=''
+   
+})
+
+//const capcha = document.getElementById('g-recaptcha-response');
+//capcha.addEventListener('slotchange',_=>{
+//    document.getElementById('#ipt_respcap').value = document.getElementById('g-recaptcha-response').value
+//})
