@@ -2,7 +2,7 @@ from flask import Flask
 import sqlite3
 
 DATABASE = './storage.db'
-WTF_CSRF_SECRET_KEY = '168428DIOGOREIS'
+WTF_CSRF_SECRET_KEY = '168428DIOGOREIS12'
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = WTF_CSRF_SECRET_KEY
