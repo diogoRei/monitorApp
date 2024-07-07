@@ -3,8 +3,8 @@
      object-fit: cover;
 }
 #videos .vd {
-  min-width: 848px;
-  min-height: 480px;
+  min-width: 424px;
+  min-height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
 }/*# sourceMappingURL=dashboard.css.map */
