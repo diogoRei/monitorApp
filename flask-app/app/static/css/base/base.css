@@ -24,8 +24,9 @@ body #main #bk, html #main #bk {
      object-fit: cover;
 }
 body #main .default-ltr-cache-1y1tnl9, html #main .default-ltr-cache-1y1tnl9 {
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
   width: 100%;
   height: 100%;
   top: 0;

@@ -23,8 +23,9 @@ body, html {
             object-fit: cover;
         }
         .default-ltr-cache-1y1tnl9 {
-            background: rgb(0 0 0 / 40%);
-            position: absolute;
+            background: rgb(0 0 0 / 30%);
+            position: fixed;
+            z-index: 1;
             width: 100%;
             height: 100%;
             top: 0;
