@@ -1,5 +1,7 @@
 .novidades {
   display: flex;
+  overflow-x: scroll;
+  scrollbar-color: rebeccapurple green;
 }
 .novidades .video {
   margin: 5px 5px 5px 5px;
@@ -11,26 +13,15 @@
      object-fit: cover;
 }
 
-.series {
+.series, .filmes {
   display: flex;
+  overflow-x: scroll;
+  scrollbar-color: rebeccapurple green;
 }
-.series .video {
+.series .video, .filmes .video {
   margin: 5px 5px 5px 5px;
 }
-.series .video .vd {
-  min-width: 424px;
-  min-height: 240px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.filmes {
-  display: flex;
-}
-.filmes .video {
-  margin: 5px 5px 5px 5px;
-}
-.filmes .video .vd {
+.series .video .vd, .filmes .video .vd {
   min-width: 424px;
   min-height: 240px;
   -o-object-fit: cover;

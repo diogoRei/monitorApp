@@ -42,8 +42,9 @@ body, html {
             min-width: 350px;                                  
            
             align-items: center;
-            border-radius: 10%;
-            overflow: hidden;
+            border-radius: 2%;
+            overflow-y: scroll;
+            scrollbar-color: rebeccapurple green;
             padding: 1%;
         }
     }

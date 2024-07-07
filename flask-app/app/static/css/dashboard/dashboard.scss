@@ -1,3 +1,4 @@
+
 .novidades{
     display: flex;    
     
@@ -10,8 +11,10 @@
             object-fit: cover;        
         }
     }
+    overflow-x: scroll;
+    scrollbar-color: rebeccapurple green;
 }
-.series{
+.series,.filmes{
     display: flex;    
     
     
@@ -23,17 +26,6 @@
             object-fit: cover;        
         }
     }
-}
-.filmes{
-    display: flex;    
-    
-    
-    .video{
-        margin: 5px 5px 5px 5px;
-        .vd {        
-            min-width:424px;
-            min-height:240px;
-            object-fit: cover;        
-        }
-    }
+    overflow-x: scroll;
+    scrollbar-color: rebeccapurple green;
 }

@@ -43,7 +43,8 @@ body #main #home, html #main #home {
   max-height: 90vh;
   min-width: 350px;
   align-items: center;
-  border-radius: 10%;
-  overflow: hidden;
+  border-radius: 2%;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
   padding: 1%;
 }/*# sourceMappingURL=base.css.map */
