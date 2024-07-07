@@ -1,9 +1,39 @@
-#videos{
-        
-    object-fit: cover;
-    .vd {        
-        min-width:424px;
-        min-height:240px;
-        object-fit: cover;        
+.novidades{
+    display: flex;    
+    
+    
+    .video{
+        margin: 5px 5px 5px 5px;
+        .vd {        
+            min-width:424px;
+            min-height:240px;
+            object-fit: cover;        
+        }
+    }
+}
+.series{
+    display: flex;    
+    
+    
+    .video{
+        margin: 5px 5px 5px 5px;
+        .vd {        
+            min-width:424px;
+            min-height:240px;
+            object-fit: cover;        
+        }
+    }
+}
+.filmes{
+    display: flex;    
+    
+    
+    .video{
+        margin: 5px 5px 5px 5px;
+        .vd {        
+            min-width:424px;
+            min-height:240px;
+            object-fit: cover;        
+        }
     }
 }
