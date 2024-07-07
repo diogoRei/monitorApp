@@ -6,8 +6,8 @@ WTF_CSRF_SECRET_KEY = '168428DIOGOREIS12'
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = WTF_CSRF_SECRET_KEY
-app.config['RECAPTCHA_PUBLIC_KEY']='6LdBWgoqAAAAAAgjhQDySnizDmCWPOnHTn7WCL9r'
-app.config['RECAPTCHA_PRIVATE_KEY']='6LdBWgoqAAAAANm0aizh7m5jFsOvLCuRJDZJpANf'
+app.config['RECAPTCHA_PUBLIC_KEY']='6LcxXQoqAAAAAI1NBaKRiLrZaYNbj8wq0cCNXdVY'
+app.config['RECAPTCHA_PRIVATE_KEY']='6LcxXQoqAAAAALssABVABxAnjDbhA0PXt9z7sX5S'
 app.config['RECAPTCHA_DATA_ATTRS']= {'theme': 'dark'}
 
 def get_db_connection():
