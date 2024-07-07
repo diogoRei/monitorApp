@@ -13,8 +13,27 @@ body #main, html #main {
   background-color: #e4dddd;
   height: 100vh;
 }
+body #main #bk, html #main #bk {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #main .default-ltr-cache-1y1tnl9, html #main .default-ltr-cache-1y1tnl9 {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 body #main #home, html #main #home {
   background-color: rgb(247, 247, 250);
+  z-index: 10;
   min-width: 220px;
   min-height: 220px;
   align-items: center;

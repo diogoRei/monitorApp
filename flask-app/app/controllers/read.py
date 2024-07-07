@@ -8,7 +8,6 @@ def get_users():
     cursor.execute('SELECT * FROM users')
     users = cursor.fetchall()
     conn.close()
-
     return jsonify([dict(row) for row in users])
 
 @app.route('/users/<int:user_id>', methods=['GET'])
