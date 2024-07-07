@@ -41,6 +41,8 @@ body #main #home, html #main #home {
   z-index: 10;
   min-width: 220px;
   min-height: 220px;
+  width: auto;
+  height: auto;
   align-items: center;
   border-radius: 10%;
 }/*# sourceMappingURL=base.css.map */

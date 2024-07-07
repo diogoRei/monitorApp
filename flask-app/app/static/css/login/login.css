@@ -31,8 +31,20 @@ h1 {
   margin: 5px 5px 5px 5px;
 }
 #form .itens_form #ipt_email, #form .itens_form #ipt_senha {
+  height: 25px;
   min-width: 100%;
   margin: 5px 5px 5px 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(184, 184, 184, 0.192);
+  border-bottom: 2px solid rgb(194, 34, 34);
+}
+#form .itens_form #ipt_email:focus, #form .itens_form #ipt_senha:focus {
+  border: none !important;
+  background-color: rgba(184, 184, 184, 0.192);
+  border-bottom: 3px solid #123050 !important;
+  height: 50px;
+  font-size: 20px;
 }
 #form .itens_form #lb_remember {
   margin: 5px 5px 5px 5px;
