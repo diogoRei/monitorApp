@@ -39,8 +39,8 @@ body #main .default-ltr-cache-1y1tnl9, html #main .default-ltr-cache-1y1tnl9 {
 body #main #home, html #main #home {
   background-color: rgb(247, 247, 250);
   z-index: 10;
-  max-width: 80%;
-  max-height: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
   min-width: 350px;
   align-items: center;
   border-radius: 10%;

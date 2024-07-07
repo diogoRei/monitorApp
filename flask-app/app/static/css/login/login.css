@@ -10,7 +10,11 @@ h1 {
   text-shadow: 2px 2px rgb(24, 5, 5);
 }
 
-#form {
+#container {
+  width: 100%;
+  padding: 1%;
+}
+#container #form {
   display: block;
   width: 100%;
   height: 100%;
@@ -19,38 +23,40 @@ h1 {
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#form .itens_form {
+#container #form .itens_form {
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 10%;
   align-items: center;
+  padding: 1%;
 }
-#form .itens_form #lb_email, #form .itens_form #lb_senha {
+#container #form .itens_form #lb_email, #container #form .itens_form #lb_senha {
   width: 100%;
   margin: 5px 5px 5px 5px;
 }
-#form .itens_form #ipt_email, #form .itens_form #ipt_senha {
+#container #form .itens_form #ipt_email, #container #form .itens_form #ipt_senha {
   height: 25px;
   min-width: 100%;
+  padding: 1%;
   margin: 5px 5px 5px 5px;
   border-radius: 3px;
   border: none;
   background-color: rgba(184, 184, 184, 0.192);
   border-bottom: 2px solid rgb(194, 34, 34);
 }
-#form .itens_form #ipt_email:focus, #form .itens_form #ipt_senha:focus {
+#container #form .itens_form #ipt_email:focus, #container #form .itens_form #ipt_senha:focus {
   border: none !important;
   background-color: rgba(184, 184, 184, 0.192);
   border-bottom: 3px solid #123050 !important;
   height: 50px;
   font-size: 20px;
 }
-#form .itens_form #lb_remember {
+#container #form .itens_form #lb_remember {
   margin: 5px 5px 5px 5px;
 }
-#form .itens_form #btn_submit {
+#container #form .itens_form #btn_submit {
   width: 100%;
   background: rgb(64, 64, 180);
   background: linear-gradient(126deg, rgba(64, 64, 180, 0.6110819328) 18%, rgba(41, 98, 145, 0.5550595238) 81%);
