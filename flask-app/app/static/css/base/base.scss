@@ -25,10 +25,13 @@ body, html {
         .default-ltr-cache-1y1tnl9 {
             background: rgb(0 0 0 / 40%);
             position: absolute;
+            width: 100%;
+            height: 100%;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+            object-fit: cover;
         }
         #home{
             background-color: rgb(247, 247, 250);
